@@ -1,0 +1,113 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+body
+	color: #2c297c
+
+section
+	padding: 100px 0 70px
+	.hero
+		padding: 0
+/*----------  Header  ----------*/
+header 
+	background: #fff
+	padding: 10px 0
+
+	.logo
+		float: left
+	.header-tel
+		float: right
+		font-weight: bold
+		span
+			display: inline-block
+			background: rgba(255, 22, 84, 0.08)
+			padding: 4px 10px
+		span:first-child
+			margin-right: 20px
+
+/*----------  Hero  ----------*/
+.hero 
+	height: 300px
+	background: #2c297c
+	.container
+		height: 100% 	
+
+	.hero-text-wrapper
+		display: table
+		width: 100%
+		height: 100%
+
+		.hero-text
+			display: table-cell
+			vertical-align: middle
+			text-align: center
+			height: 100%
+			width: 100%
+			h3
+				color: #fff
+				text-transform: uppercase
+				font-weight: normal
+				display: inline-block
+				width: 600px
+				border: 1px solid rgba(173, 192, 228, 0.26)
+				padding: 40px
+
+/*----------  Police  ----------*/
+.police 
+	b
+		font-style: 20px
+		text-transform: uppercase
+	img
+		float: left
+		margin-right: 20px
+	.police-text
+		background: #efefef
+
+/*----------  Features  ----------*/
+
+.features
+	background: rgba(255, 22, 84, 0.08)
+	h2
+		text-align: center
+		margin-bottom: 70px
+	.feature
+
+		.icon
+			text-align: center
+			padding: 30px
+
+			i
+				font-size: 40px
+
+		p
+			text-align: center
+
+//ALWAYS END
+@import "media"
