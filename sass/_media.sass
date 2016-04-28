@@ -36,12 +36,91 @@
 		-ms-animation: none !important
 		animation: none !important
 
-
+	footer
+		.footer-contacts
+			span
+				display: block
+	.license 
+		.col-md-6
+			margin-bottom: 20px	
+	.clients
+		padding-bottom: 0
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.features h2, .services h2, .how h2, .clients h2, .license h2
+		font-size: 18px
+	section
+		padding: 30px 0 
+	header
+		padding-bottom: 3px
+		.header-tel
+			line-height: 15px
+			font-size: 12px
+			background: transparent
+			span
+				display: block
 
+	.callback
+		a
+			width: 200px
 
+	.slider
+		padding: 0
+		&:after
+			display: none
+		&:before
+			display: none
+	.bx-wrapper
+		height: 100px
+	.bx-wrapper .bx-caption
+		height: 40px
+		span
+			font-size: 14px
+			line-height: 20px
+
+	.features
+		h2
+			margin-bottom: 40px
+
+	.clients
+		.col-xs-6
+			width: 100%
+			.client-item
+				height: auto
+				text-align: center
+	
+	.services
+		.service
+			width: 200px
+
+	.how
+		.how-steps
+			padding-left: 40px
+			&:after
+				margin-top: 5px
+				left: -98
+			li
+				font-size: 14px
+
+				display: inline-block
+				i
+					font-size: 20px
+
+	.license 
+		.col-md-6
+			margin-bottom: 20px
+		img
+			width: 250px
+			height: 333px
+
+	footer
+		.footer-contacts
+			span
+				display: block
+				font-size: 13px
+				margin-left: 0px
+
+		
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

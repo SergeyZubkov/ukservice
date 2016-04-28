@@ -13,7 +13,7 @@ gulp.task('browser-sync', ['styles', 'scripts'], function() {
 						baseDir: "./app"
 				},
 				notify: false
-		});
+		}); 	
 });
 
 gulp.task('styles', function () {
@@ -35,6 +35,10 @@ gulp.task('scripts', function() {
 		'./app/libs/waypoints/waypoints.min.js',
 		'./app/libs/animate/animate-css.js',
 		'./app/libs/plugins-scroll/plugins-scroll.js',
+		'./app/libs/jquery.bxslider/jquery.bxslider.min.js',
+		'./app/libs/jquery.smoothscroll/jquery.smooth-scroll.js',
+		'./app/libs/jquery.lightbox/lightbox.min.js',
+		'./app/libs/remodal/remodal.min.js'
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js
